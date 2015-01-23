@@ -5,29 +5,32 @@ int main(int argc, char* argv[]) {
    // bool, char, short, int, long, float, double, long long
    
    int x = 10; // the number 10 is called a literal
-   int y;
+   int y; 
 
 
    // normal math operators are the same as in Java: + - * / % 
    y = x + 5;
    y = y + 1;
    // what is the value of y?
-
+    //16
    // integer division rounds down, as in Java
-   x = y / 6;
+   x = y / 6;   //x = 2
    // what is the value of x?
-   x = y % 6;
+   x = y % 6;  //x = 4
 
    // multiplying a floating point-type with an integer-type casts up to the 
    // floating point type
    double pi = 3.14159;
    double area = pi * y * y; // double * int * int --> double
 
+  // int i = 5.5; // i will be equal to 5.
 
    // What is the value of this variable?
-   double complicated = 5.0 * 3 + 5 / 2 - 15.9;
+   double complicated = 5.0 * 3 + 5 / 2 - 15.9; //priority first then left to right
+
    // Edit this file yourself and cout the variable. Make sure the output is
    // what you expect.
+  // 15.0 + 2 - 15.9 = 1.1
 
 
 
@@ -39,20 +42,22 @@ int main(int argc, char* argv[]) {
    
 
    // bools are actually integers and can be assigned integer values. 
-   // any non-zero integer is treated as "true"
-   b = 2; // what is b?
+   // any non-zero integer is treated as "true" only 0 is false.
+   b = 2; // what is b? true
+
    
 
 
 
    cout << "QUESTION OF THE DAY: " << (b + e + f) << endl;
-   // what is the output?
+   // what is the output? = 1 + 1 + 0 = 2
 
 
 
    // if you involve a bool in arithmetic, it is treated as having a value of 1 
    // if true, and 0 if false.
    x = x + b;
+// x = int + bol = 4 + 1 = 5
 
    // integer values can be expressed in hex (base 16) or oct (base 8) notation:
    x = 0x2A; // 0x --> start of a hex number
@@ -67,9 +72,9 @@ int main(int argc, char* argv[]) {
    x = c;
    
    //  this has interesting consequences
-   char d = x + 5;
+   char d = x + 5; //70 / F
    // what is the value of d?
-   x = 'J' - d;
+   x = 'J' - d; // 'J' - 'F' = 4?
 
 
    // size and range of integer types
